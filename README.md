@@ -22,3 +22,7 @@
 - ## Arduino UNO pin map
 
     > ![Arduino pin map](./pin_map.png)
+
+- ## 
+
+    > ![Color table](./color_table.png)
