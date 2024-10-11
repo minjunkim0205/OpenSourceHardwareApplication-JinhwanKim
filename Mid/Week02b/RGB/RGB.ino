@@ -1,6 +1,6 @@
-#define PIN_R 9
-#define PIN_G 10
-#define PIN_B 11
+#define PIN_R A0
+#define PIN_G A1
+#define PIN_B A2
 
 void setRGBLed(int r, int g, int b){
   analogWrite(PIN_R, r);
