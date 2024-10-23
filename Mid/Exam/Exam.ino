@@ -84,7 +84,6 @@ void loop() {
   }
   // 사람이 가까이 다가오면
   if(ult_value < 10){
-    Serial.print("dd");
     setRGBLed(255,255,255);
   }
   else{

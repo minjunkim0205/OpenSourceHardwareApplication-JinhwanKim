@@ -1,6 +1,6 @@
-#define PIN_R A0
+#define PIN_R A2
 #define PIN_G A1
-#define PIN_B A2
+#define PIN_B A0
 
 void setRGBLed(int r, int g, int b){
   analogWrite(PIN_R, r);
@@ -16,17 +16,10 @@ void setup() {
 }
 
 void loop() {
-  int r = random(0, 3);
-  Serial.println(r);
-  for(int i = 255; i>=0; i--){
-    switch (r) {
-      case 0:
-        setRGBLed(i, 0, 0);
-      case 1:
-        setRGBLed(0, i, 0);
-      case 2:
-        setRGBLed(0, 0, i);
-    }
-    delay(2);
-  }
+  setRGBLed(255, 0, 0);
+  delay(100);
+  setRGBLed(0, 255, 0);
+  delay(100);
+  setRGBLed(0, 0, 255);
+  delay(100);
 }
