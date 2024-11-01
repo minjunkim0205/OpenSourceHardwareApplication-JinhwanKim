@@ -17,14 +17,14 @@ void setup(){
   pinMode(PHOTORESISTOR, INPUT);
   pinMode(PIEZO, OUTPUT);
   pinMode(PIN_R, OUTPUT);
-  pinMode(PIN_G, OUTPUT);
+  pinMode(PIN_G, OUTPUT);   
   pinMode(PIN_B, OUTPUT);
 }
 
 void loop() {
   if(analogRead(PHOTORESISTOR) > 350){
     setRGBLed(255, 0, 0);
-  }
+  }            
   else{
     setRGBLed(0, 0, 0);
     tone(PIEZO, SCALE[3], 250);
